@@ -6,7 +6,7 @@ export default function Hero() {
     <header className="hero desk" id="top">
       <div className="hero__grid container">
         <div className="hero__copy">
-          <h1>I build web apps and AI products.</h1>
+          <h1>I Build Web Apps and AI Products.</h1>
           <p className="lead">I’m Khushant, a freelance full-stack developer who takes products from idea to launch.</p>
           <div className="actions">
             <a className="btn btn--ink" href="#contact">Start a project</a>

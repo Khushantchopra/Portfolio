@@ -54,7 +54,7 @@ export default function Contact() {
     <section className="board" id="contact" aria-labelledby="ct-title">
       <div className="board__grid container">
         <div className="board__copy">
-          <h2 id="ct-title">Have something to build?</h2>
+          <h2 id="ct-title">Have Something to Build?</h2>
           <p className="lead">Send a short note on what it should do and when you need it.</p>
         </div>
 

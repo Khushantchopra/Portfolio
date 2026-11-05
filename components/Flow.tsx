@@ -5,19 +5,19 @@ import { motion, useMotionValueEvent, useScroll } from "motion/react";
 
 const steps = [
   {
-    title: "Ranks every resume against the job.",
+    title: "Ranks Every Resume Against the Job.",
     sub: "Upload the PDFs with the job description. Each candidate gets a fit score, strengths and gaps.",
     img: "flow1",
     alt: "ScreenityAI candidate table ranked by fit score, demo data",
   },
   {
-    title: "Then it runs the interview.",
+    title: "Then It Runs the Interview.",
     sub: "Questions come from the recruiter’s own bank, up to 12, one at a time, and every answer is scored.",
     img: "flow2",
     alt: "ScreenityAI interview chat asking a candidate a question, demo data",
   },
   {
-    title: "And hands back a scored report.",
+    title: "And Hands Back a Scored Report.",
     sub: "A score out of 100, a hiring recommendation and a score for each phase.",
     img: "flow3",
     alt: "ScreenityAI interview report showing 87 out of 100, demo data",
@@ -49,7 +49,7 @@ export default function Flow() {
   return (
     <section className="flow" aria-labelledby="flow-title">
       <div className="flow__intro">
-        <h4 id="flow-title">One hire, start to finish</h4>
+        <h4 id="flow-title">One Hire, Start to Finish</h4>
         <p>Stills from the ScreenityAI launch film, as the recruiter sees them.</p>
       </div>
       <div className="flow__track" ref={ref}>

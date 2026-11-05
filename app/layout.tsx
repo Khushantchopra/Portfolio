@@ -23,10 +23,10 @@ const description =
 
 export const metadata: Metadata = {
   metadataBase: new URL(site),
-  title: "Khushant Chopra | Web apps and AI products, built end to end",
+  title: "Khushant Chopra | Web Apps and AI Products, Built End to End",
   description,
   openGraph: {
-    title: "Khushant Chopra | Web apps and AI products, built end to end",
+    title: "Khushant Chopra | Web Apps and AI Products, Built End to End",
     description,
     type: "website",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "I build web apps and AI products. Khushant Chopra, freelance full-stack developer." }],
