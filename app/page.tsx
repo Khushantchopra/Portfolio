@@ -56,15 +56,14 @@ const services = [
   { title: "Databases and Hosting", body: "Your database, logins and hosting set up properly, so any developer can take over later.", icon: "M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" },
 ];
 
-const skills: [string, string[]][] = [
-  ["Languages", ["Python", "TypeScript", "JavaScript", "SQL", "Bash", "HTML and CSS"]],
-  ["Front End", ["React", "Next.js", "Vite", "Tailwind CSS"]],
-  ["Back End", ["Node.js", "FastAPI", "Flask", "Supabase", "Firebase"]],
-  ["Databases", ["PostgreSQL", "MongoDB", "MySQL"]],
-  ["AI", ["OpenAI (GPT-4o mini, Whisper)", "Google Gemini", "Azure Speech", "AWS Rekognition"]],
-  ["Testing", ["Playwright", "Postman", "End-to-end tests", "Regression tests", "API tests"]],
-  ["Hosting and Payments", ["Vercel", "Razorpay"]],
-  ["Workflow", ["Git and GitHub", "Slack", "Jira", "Linux"]],
+const skills: [string, string][] = [
+  ["Languages", "Python, TypeScript, JavaScript, SQL, Bash, HTML and CSS"],
+  ["Front end", "React, Next.js, Vite, Tailwind CSS"],
+  ["Back end", "Node.js, FastAPI, Flask, Supabase, Firebase"],
+  ["AI", "OpenAI (GPT-4o mini, Whisper), Google Gemini, Azure Speech, AWS Rekognition"],
+  ["Databases", "PostgreSQL, MongoDB, MySQL"],
+  ["Testing", "Playwright, Postman, end-to-end, regression and API tests"],
+  ["Tools", "Git, GitHub, Vercel, Razorpay, Slack, Jira, Linux"],
 ];
 
 const Icon = ({ d }: { d: string }) => (
@@ -125,19 +124,19 @@ export default function Page() {
         </section>
 
         <section className="section container" id="skills" aria-labelledby="sk-title">
-          <div className="section__head">
-            <h2 id="sk-title">Skills and Tools</h2>
-            <p className="lead">One toolkit for every project. I pick what fits yours.</p>
-          </div>
-          <div className="skills">
-            {skills.map(([k, items]) => (
-              <div className="skills__group" key={k}>
-                <h3>{k}</h3>
-                <ul>
-                  {items.map((i) => <li key={i}>{i}</li>)}
-                </ul>
-              </div>
-            ))}
+          <div className="split">
+            <div className="split__head">
+              <h2 id="sk-title">Skills and Tools</h2>
+              <p className="lead">One toolkit for every project. I pick what fits yours.</p>
+            </div>
+            <dl className="stack skills">
+              {skills.map(([k, v]) => (
+                <div key={k}>
+                  <dt>{k}</dt>
+                  <dd>{v}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
 
