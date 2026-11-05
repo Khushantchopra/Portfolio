@@ -1,0 +1,61 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "shape": "split-studio",
+  "theme": "coral",
+  "axes": "light/grotesk-sans/warm",
+  "hero": "index",
+  "nav": "retracting-bar",
+  "footer": "index-columns",
+  "imagery": "product",
+  "photos": 0,
+  "entry": "desk",
+  "fingerprint": "desk-sheet-stamp",
+  "sections": [
+   "hero",
+   "services-grid",
+   "work",
+   "flow",
+   "process",
+   "contact-board",
+   "footer"
+  ],
+  "signature": "ScreenityAI spec sheet on the desk, stamped Shipped",
+  "waived": [
+   "83",
+   "49b",
+   "44c"
+  ],
+  "prompt": "freelance full-stack developer portfolio, service-company feel, light colours",
+  "date": "2026-11-05"
+ },
+ {
+  "shape": "poster index",
+  "theme": "custom",
+  "axes": "light/display-condensed/chromatic-orange",
+  "hero": "three lines of type wall to wall, sentence and actions under a rule",
+  "nav": "plain row that tightens on scroll",
+  "footer": "one text row",
+  "imagery": "product: launch film, walkthrough, screenshots, film stills",
+  "photos": 0,
+  "entry": "masked line rise",
+  "sections": [
+   "hero",
+   "selected work",
+   "ScreenityAI",
+   "pinned hire flow",
+   "SpeechSmith",
+   "what I can build",
+   "contact",
+   "footer"
+  ],
+  "signature": "the pinned hire, three film stills swapping as you scroll",
+  "waived": [
+   "83"
+  ],
+  "prompt": "freelance portfolio for Khushant Chopra, Next.js, light paper, one accent, condensed display",
+  "date": "2026-11-05",
+  "mode": "build"
+ }
+]
