@@ -48,12 +48,12 @@ const speechsmith: ProjectData = {
 };
 
 const services = [
-  { title: "Web apps, front to back", body: "React and Next.js front ends on Node.js or Python APIs, with sign-in, payments and email wired in.", tools: ["React", "Next.js", "Node.js", "FastAPI"], icon: "M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16" },
-  { title: "AI features", body: "Speech, chat and document tools on OpenAI, Gemini and Azure, checked against real input.", tools: ["OpenAI", "Gemini", "Azure Speech"], icon: "M4 10v4M8 6v12M12 9v6M16 4v16M20 10v4" },
-  { title: "Automate manual tasks", body: "Scripts and bots that take over repetitive work: pulling data, filling forms, building reports and posting them to Slack.", tools: ["Python", "Bash", "Playwright", "Slack"], icon: "M13 3L5 14h6l-1 7 8-11h-6z" },
-  { title: "Online stores", body: "Product pages, cart, Razorpay checkout and an admin panel to run the shop.", tools: ["Next.js", "Supabase", "Razorpay"], icon: "M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2" },
-  { title: "Testing and automation", body: "End-to-end, regression and API tests that run on every change and report to Slack.", tools: ["Playwright", "Postman"], icon: "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM8 12.5l2.7 2.7L16 9.8" },
-  { title: "Databases and hosting", body: "Schemas, auth and deploys you can hand to the next developer.", tools: ["Postgres", "MongoDB", "MySQL", "Vercel"], icon: "M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" },
+  { title: "Websites and web apps", body: "Custom websites and web apps built from scratch, with user login, payments and email included.", tools: ["React", "Next.js", "Node.js", "FastAPI"], icon: "M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16" },
+  { title: "AI for your product", body: "Add AI to your app: chatbots, speech analysis and document reading, built on OpenAI, Gemini or Azure.", tools: ["OpenAI", "Gemini", "Azure Speech"], icon: "M4 10v4M8 6v12M12 9v6M16 4v16M20 10v4" },
+  { title: "Automate repetitive work", body: "Scripts and bots that do your manual tasks for you: collecting data, filling forms, making reports and sending them to Slack.", tools: ["Python", "Bash", "Playwright", "Slack"], icon: "M13 3L5 14h6l-1 7 8-11h-6z" },
+  { title: "Online stores", body: "A complete online shop with product pages, a cart, Razorpay payments and an admin panel to manage it.", tools: ["Next.js", "Supabase", "Razorpay"], icon: "M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2" },
+  { title: "Software testing", body: "Automated tests that check your app after every update, so bugs are caught before your users find them.", tools: ["Playwright", "Postman"], icon: "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM8 12.5l2.7 2.7L16 9.8" },
+  { title: "Databases and hosting", body: "Your database, logins and hosting set up properly, so any developer can take over later.", tools: ["Postgres", "MongoDB", "MySQL", "Vercel"], icon: "M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" },
 ];
 
 const Icon = ({ d }: { d: string }) => (
