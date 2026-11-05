@@ -48,12 +48,13 @@ export default function Flow() {
 
   return (
     <section className="flow" aria-labelledby="flow-title">
-      <div className="flow__intro">
-        <h4 id="flow-title">One Hire, Start to Finish</h4>
-        <p>Stills from the ScreenityAI launch film, as the recruiter sees them.</p>
-      </div>
       <div className="flow__track" ref={ref}>
       <div className="flow__pin">
+        <div className="flow__side">
+        <div className="flow__intro">
+          <h4 id="flow-title">One Hire, Start to Finish</h4>
+          <p>Stills from the ScreenityAI launch film, as the recruiter sees them.</p>
+        </div>
         <div className="flow__copy">
           <div className="flow__rail" aria-hidden>
             <motion.span style={{ scaleY: scrollYProgress }} />
@@ -70,6 +71,7 @@ export default function Flow() {
               </li>
             ))}
           </ol>
+        </div>
         </div>
         <div className="flow__stage" aria-hidden>
           {steps.map((s, i) => (
