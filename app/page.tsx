@@ -48,12 +48,22 @@ const speechsmith: ProjectData = {
 };
 
 const services = [
-  { title: "Websites and Web Apps", body: "Custom websites and web apps built from scratch, with user login, payments and email included.", tools: ["React", "Next.js", "Node.js", "FastAPI"], icon: "M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16" },
-  { title: "AI for Your Product", body: "Add AI to your app: chatbots, speech analysis and document reading, built on OpenAI, Gemini or Azure.", tools: ["OpenAI", "Gemini", "Azure Speech"], icon: "M4 10v4M8 6v12M12 9v6M16 4v16M20 10v4" },
-  { title: "Automate Repetitive Work", body: "Scripts and bots that do your manual tasks for you: collecting data, filling forms, making reports and sending them to Slack.", tools: ["Python", "Bash", "Playwright", "Slack"], icon: "M13 3L5 14h6l-1 7 8-11h-6z" },
-  { title: "Online Stores", body: "A complete online shop with product pages, a cart, Razorpay payments and an admin panel to manage it.", tools: ["Next.js", "Supabase", "Razorpay"], icon: "M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2" },
-  { title: "Software Testing", body: "Automated tests that check your app after every update, so bugs are caught before your users find them.", tools: ["Playwright", "Postman"], icon: "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM8 12.5l2.7 2.7L16 9.8" },
-  { title: "Databases and Hosting", body: "Your database, logins and hosting set up properly, so any developer can take over later.", tools: ["Postgres", "MongoDB", "MySQL", "Vercel"], icon: "M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" },
+  { title: "Websites and Web Apps", body: "Custom websites and web apps built from scratch, with user login, payments and email included.", icon: "M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16" },
+  { title: "AI for Your Product", body: "Add AI to your app: chatbots, speech analysis and document reading, built on OpenAI, Gemini or Azure.", icon: "M4 10v4M8 6v12M12 9v6M16 4v16M20 10v4" },
+  { title: "Automate Repetitive Work", body: "Scripts and bots that do your manual tasks for you: collecting data, filling forms, making reports and sending them to Slack.", icon: "M13 3L5 14h6l-1 7 8-11h-6z" },
+  { title: "Online Stores", body: "A complete online shop with product pages, a cart, Razorpay payments and an admin panel to manage it.", icon: "M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2" },
+  { title: "Software Testing", body: "Automated tests that check your app after every update, so bugs are caught before your users find them.", icon: "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM8 12.5l2.7 2.7L16 9.8" },
+  { title: "Databases and Hosting", body: "Your database, logins and hosting set up properly, so any developer can take over later.", icon: "M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" },
+];
+
+const skills: [string, string][] = [
+  ["Languages", "Python, TypeScript, JavaScript, SQL, Bash, HTML and CSS"],
+  ["Front end", "React, Next.js, Vite, Tailwind CSS"],
+  ["Back end", "Node.js, FastAPI, Flask, Supabase, Firebase"],
+  ["AI", "OpenAI (GPT-4o mini, Whisper), Google Gemini, Azure Speech, AWS Rekognition"],
+  ["Databases", "PostgreSQL, MongoDB, MySQL"],
+  ["Testing", "Playwright, Postman, end-to-end, regression and API tests"],
+  ["Tools", "Git, GitHub, Vercel, Razorpay, Slack, Jira, Linux"],
 ];
 
 const Icon = ({ d }: { d: string }) => (
@@ -93,9 +103,6 @@ export default function Page() {
                     </span>
                     <h3>{s.title}</h3>
                     <p>{s.body}</p>
-                    <ul className="tags" aria-label="Tools">
-                      {s.tools.map((t) => <li key={t}>{t}</li>)}
-                    </ul>
                     <span className="service__cta">Ask about this</span>
                   </a>
                 </li>
@@ -113,6 +120,23 @@ export default function Page() {
                 </a>
               </li>
             </ul>
+          </div>
+        </section>
+
+        <section className="section container" id="skills" aria-labelledby="sk-title">
+          <div className="split">
+            <div className="split__head">
+              <h2 id="sk-title">Skills and Tools</h2>
+              <p className="lead">One toolkit for every project. I pick what fits yours.</p>
+            </div>
+            <dl className="stack skills">
+              {skills.map(([k, v]) => (
+                <div key={k}>
+                  <dt>{k}</dt>
+                  <dd>{v}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
 
