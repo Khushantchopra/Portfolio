@@ -1,5 +1,7 @@
 # Khushant Chopra, portfolio
 
+https://khushantchopra.vercel.app/
+
 Next.js (App Router, static export), Tailwind v4, Motion and Lenis.
 
 ## Run locally
