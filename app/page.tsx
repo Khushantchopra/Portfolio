@@ -179,6 +179,7 @@ export default function Page() {
           <div className="foot__brand">
             <a className="nav__name" href="#top">Khushant Chopra</a>
             <p>Freelance full-stack developer, working remotely from India. Web apps, AI features, task automation, online stores and testing.</p>
+            <a className="btn btn--ink" href="#contact">Start a project</a>
           </div>
           <nav aria-label="Footer">
             <p className="foot__label">Pages</p>
@@ -190,13 +191,27 @@ export default function Page() {
             </ul>
           </nav>
           <div>
+            <p className="foot__label">Projects</p>
+            <ul>
+              <li><a href="#p2">SpeechSmith</a></li>
+              <li><a href="#p1">ScreenityAI</a></li>
+              <li><a href="https://speechsmith.net" target="_blank" rel="noopener">speechsmith.net</a></li>
+            </ul>
+          </div>
+          <div className="foot__contact">
             <p className="foot__label">Contact</p>
             <ul>
               <li><a href="#contact">{EMAIL}</a></li>
+              <li>India, IST (UTC+5:30)</li>
             </ul>
           </div>
         </div>
-        <div className="container"><p className="foot__base">© 2026 Khushant Chopra</p></div>
+        <div className="container">
+          <p className="foot__base">
+            <span>© 2026 Khushant Chopra</span>
+            <a href="#top">Back to top</a>
+          </p>
+        </div>
       </footer>
     </>
   );
