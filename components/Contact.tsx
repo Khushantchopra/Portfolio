@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useMotionValue, useSpring } from "motion/react";
-import { EMAIL, LINKEDIN } from "@/lib/site";
+import { EMAIL } from "@/lib/site";
 
 export default function Contact() {
   const mailRef = useRef<HTMLSpanElement>(null);
@@ -82,7 +82,7 @@ export default function Contact() {
             {copied ? "Email address copied." : status === "selected" ? "Selected. Press Ctrl+C or Cmd+C to copy." : ""}
           </p>
           <p className="letter__alt">
-            Or find me on <a href={LINKEDIN} rel="me noopener">LinkedIn</a>
+            I work remotely from India, on IST (UTC+5:30).
           </p>
         </div>
       </div>

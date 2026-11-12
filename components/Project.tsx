@@ -14,10 +14,11 @@ export type ProjectData = {
   stack: [string, string][];
   video: { src: string; poster: string; width: number; height: number; caption: string };
   shots?: Shot[];
+  live?: { href: string; label: string };
 };
 
 /** A split row: the project's facts on the left, its film (and screens) on the right. */
-export default function Project({ id, num, name, kind, text, stack, video, shots = [] }: ProjectData) {
+export default function Project({ id, num, name, kind, text, stack, video, shots = [], live }: ProjectData) {
   const frame = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: frame, offset: ["start end", "start 0.35"] });
   const scale = useTransform(scrollYProgress, [0, 1], [0.94, 1]);
@@ -37,6 +38,7 @@ export default function Project({ id, num, name, kind, text, stack, video, shots
             </div>
           ))}
         </dl>
+        {live && <a className="btn btn--card project__live" href={live.href} target="_blank" rel="noopener">{live.label}</a>}
       </div>
 
       <div className="project__proof">

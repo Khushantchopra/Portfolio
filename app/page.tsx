@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import Project, { type ProjectData } from "@/components/Project";
 import Flow from "@/components/Flow";
 import Contact from "@/components/Contact";
-import { EMAIL, LINKEDIN } from "@/lib/site";
+import { EMAIL } from "@/lib/site";
 
 const shot = (name: string, w: number, h: number, alt: string, caption: string) => ({
   src: `/media/${name}-${w}.webp`,
@@ -17,7 +17,7 @@ const shot = (name: string, w: number, h: number, alt: string, caption: string) 
 
 const screenity: ProjectData = {
   id: "p1",
-  num: "01",
+  num: "02",
   name: "ScreenityAI",
   kind: "AI hiring assistant",
   text: "It ranks a pile of resumes against the job description, interviews candidates with the recruiter’s own questions and hands back a scored report.",
@@ -31,7 +31,7 @@ const screenity: ProjectData = {
 
 const speechsmith: ProjectData = {
   id: "p2",
-  num: "02",
+  num: "01",
   name: "SpeechSmith",
   kind: "AI speaking coach",
   text: "You record a speech and get scored on pace, pauses, filler words, grammar and pronunciation, then hear a better version read back.",
@@ -41,6 +41,7 @@ const speechsmith: ProjectData = {
     ["AI", "Whisper, GPT-4o mini, Azure Speech"],
   ],
   video: { src: "/media/speechsmith-walkthrough.mp4", poster: "/media/speechsmith-poster-1280.webp", width: 1280, height: 720, caption: "The walkthrough I recorded for the client, 2:50, with sound" },
+  live: { href: "https://speechsmith.net", label: "Visit speechsmith.net" },
   shots: [
     shot("ss-record", 1104, 812, "SpeechSmith recording screen with audience and tone settings", "Recording, set up for audience and tone"),
     shot("ss-report", 1104, 812, "SpeechSmith report with a suggested fix under each score", "The report, with a fix for every score under 100"),
@@ -86,6 +87,16 @@ export default function Page() {
       <Nav />
       <main id="main">
         <Hero />
+
+        <section className="section container" id="work" aria-labelledby="work-title">
+          <div className="section__head">
+            <h2 id="work-title">Selected Work</h2>
+            <p className="lead">Two products I built end to end, shown with the films and screens they shipped with.</p>
+          </div>
+          <Project {...speechsmith} />
+          <Project {...screenity} />
+          <Flow />
+        </section>
 
         <section className="section band" id="services" aria-labelledby="sv-title">
           <div className="container">
@@ -140,16 +151,6 @@ export default function Page() {
           </div>
         </section>
 
-        <section className="section container" id="work" aria-labelledby="work-title">
-          <div className="section__head">
-            <h2 id="work-title">Selected Work</h2>
-            <p className="lead">Two products I built end to end, shown with the films and screens they shipped with.</p>
-          </div>
-          <Project {...screenity} />
-          <Flow />
-          <Project {...speechsmith} />
-        </section>
-
         <section className="section container" id="process" aria-labelledby="pr-title">
           <div className="split">
             <div className="split__head">
@@ -177,13 +178,13 @@ export default function Page() {
         <div className="foot__grid container">
           <div className="foot__brand">
             <a className="nav__name" href="#top">Khushant Chopra</a>
-            <p>Freelance full-stack developer. Web apps, AI features, task automation, online stores and testing.</p>
+            <p>Freelance full-stack developer, working remotely from India. Web apps, AI features, task automation, online stores and testing.</p>
           </div>
           <nav aria-label="Footer">
             <p className="foot__label">Pages</p>
             <ul>
-              <li><a href="#services">Services</a></li>
               <li><a href="#work">Work</a></li>
+              <li><a href="#services">Services</a></li>
               <li><a href="#process">Process</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -192,7 +193,6 @@ export default function Page() {
             <p className="foot__label">Contact</p>
             <ul>
               <li><a href="#contact">{EMAIL}</a></li>
-              <li><a href={LINKEDIN} rel="me noopener">LinkedIn</a></li>
             </ul>
           </div>
         </div>
