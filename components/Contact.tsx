@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useMotionValue, useSpring } from "motion/react";
-import { EMAIL } from "@/lib/site";
+import { EMAIL, FIVERR } from "@/lib/site";
 
 export default function Contact() {
   const mailRef = useRef<HTMLSpanElement>(null);
@@ -77,6 +77,7 @@ export default function Contact() {
                 "Copy email"
               )}
             </button>
+            <a className="btn btn--card" href={FIVERR} target="_blank" rel="noopener">Hire me on Fiverr</a>
           </div>
           <p className="letter__status" role="status">
             {copied ? "Email address copied." : status === "selected" ? "Selected. Press Ctrl+C or Cmd+C to copy." : ""}

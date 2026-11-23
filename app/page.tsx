@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import Project, { type ProjectData } from "@/components/Project";
 import Flow from "@/components/Flow";
 import Contact from "@/components/Contact";
-import { EMAIL } from "@/lib/site";
+import { EMAIL, FIVERR } from "@/lib/site";
 
 const shot = (name: string, w: number, h: number, alt: string, caption: string) => ({
   src: `/media/${name}-${w}.webp`,
@@ -202,6 +202,7 @@ export default function Page() {
             <p className="foot__label">Contact</p>
             <ul>
               <li><a href="#contact">{EMAIL}</a></li>
+              <li><a href={FIVERR} target="_blank" rel="noopener">Fiverr</a></li>
               <li>India, IST (UTC+5:30)</li>
             </ul>
           </div>
